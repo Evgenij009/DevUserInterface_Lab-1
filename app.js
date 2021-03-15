@@ -7,7 +7,6 @@ $(function() {
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
     let nav = $("#nav")
-    let navToggle = $("#navToggle");
 
     checkScroll(scrollPos, introH);
 
@@ -18,7 +17,7 @@ $(function() {
     });
 
     function checkScroll(scrollPos, introH) {
-        if (scrollPos > introH) {
+        if (scrollPos > introH - 71) {
             header.addClass("fixed");
         } else {
             header.removeClass("fixed");
