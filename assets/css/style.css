@@ -101,11 +101,15 @@ p {
     opacity: 0;
     background-color: #fff;
     position: absolute;
-    margin-bottom: 20px;
+    margin-bottom: 44px;
     bottom: 100%;
     left: 0;
     z-index: 1;
     transition: opacity 0.3s linear;
+}
+
+.header.fixed .nav__link::before {
+    margin-bottom: 31px;
 }
 
 .nav__link:hover {
@@ -171,7 +175,7 @@ p {
 }
 
 .social__icon:hover {
-    transform: scale(3);
+    transform: scale(2);
     transition: transform 0.3s linear;
 }
 
@@ -218,7 +222,6 @@ p {
     display: inline-block;
     vertical-align: top;
     padding: 14px 40px;
-    border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #000;
     cursor: pointer;
@@ -677,13 +680,18 @@ p {
 }
 
 
-/* Social */
+/* Social-footer */
 
 .footer__social {
+    margin-top: 30px;
     text-align: center;
     justify-content: center;
 }
 
 .footer__social-icon {
     fill: #fff;
+}
+
+.footer__social-icon:hover {
+    transform: scale(1.7);
 }

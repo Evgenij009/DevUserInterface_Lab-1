@@ -2,7 +2,7 @@ $(function() {
 
     // Fixed Header
     console.log("1");
-    let header = $(".jsHeader");
+    let header = $(".header__fixed-scroll");
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
