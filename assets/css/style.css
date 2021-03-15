@@ -455,7 +455,7 @@ p {
 .menu__aboutDish {
     font-size: 16px;
     font-weight: 400;
-    color: #000;
+    color: #4c4c4c;
     font-family: 'Lato', sans-serif;
     text-align: left;
     margin-bottom: 10px;
@@ -520,7 +520,7 @@ p {
 .review__footer-text {
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Gentium Book Basic', serif;
+    font-family: 'Lato', sans-serif;
     color: #fff;
 }
 
@@ -602,7 +602,9 @@ p {
 }
 
 [type="date"] {
-    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 95% 50% no-repeat;
+    margin-right: 0;
+    width: 32px;
 }
 
 .reservation__form--style_label {
