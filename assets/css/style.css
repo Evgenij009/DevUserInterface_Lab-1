@@ -158,6 +158,10 @@ p {
     padding: 0;
 }
 
+.header.fixed .social__icon {
+    fill: #fff;
+}
+
 .social__item:hover .twitter--icon {
     fill: rgb(29, 161, 242);
 }
@@ -591,7 +595,7 @@ p {
 .reservations__text {
     font-size: 16px;
     font-weight: 400;
-    color: #000;
+    color: #4c4c4c;
     font-family: 'Lato', sans-serif;
     line-height: 21px;
 }
@@ -626,10 +630,11 @@ p {
     font-weight: 400;
 }
 
-[type="date"] {
-    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 95% 50% no-repeat;
-    margin-right: 0;
-    width: 32px;
+@supports (-moz-appearance:none) {
+    input[type="date"] {
+        background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 95% 50% no-repeat;
+        margin-right: 0;
+    }
 }
 
 .reservation__form--style_label {
