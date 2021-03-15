@@ -223,7 +223,6 @@ p {
     vertical-align: top;
     padding: 14px 40px;
     background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #000;
     cursor: pointer;
     font-family: 'Lato', sans-serif;
     color: #fff;
@@ -242,7 +241,6 @@ p {
 
 .btn:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid #fff;
 }
 
 
@@ -290,8 +288,9 @@ p {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: #4c4c4c;
     text-align: center;
+    line-height: 23px;
 }
 
 .about__asign {
@@ -343,6 +342,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #fff;
+    line-height: 23px;
     text-align: center;
     margin: 30px 0 70px 0;
 }
@@ -416,6 +416,7 @@ p {
 }
 
 .picture__specialMeal {
+    margin-bottom: 1px;
     margin-right: 0;
     text-align: right;
     color: #fff;
@@ -594,6 +595,16 @@ p {
     margin-bottom: 20px;
 }
 
+.register__field::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
+}
+
 .reservation__form--style_label {
     margin-bottom: 8px;
     font-size: 14px;
@@ -623,7 +634,7 @@ p {
     width: 100%;
     display: inline-block;
     vertical-align: top;
-    padding: 9px 20px;
+    padding: 5px 20px;
     border-radius: 2px;
     background-color: #cc9900;
     border: 1px solid #cc9900;
@@ -632,9 +643,9 @@ p {
     color: #fff;
     text-decoration: none;
     transition: background 0.3s linear;
-    margin: 0 120px;
+    margin: 0 115px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .form__btn-submit:hover {
@@ -677,6 +688,10 @@ p {
     color: #fff;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.text__bold {
+    font-weight: 700;
 }
 
 
