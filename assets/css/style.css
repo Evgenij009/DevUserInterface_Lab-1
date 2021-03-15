@@ -487,13 +487,19 @@ p {
 }
 
 .review__inner {
-    width: 100%;
-    max-width: 770px;
-    max-height: 558px;
-    padding: 80px 70px 100px 70px;
+    width: 771px;
+    height: 550px;
+    padding: 80px 0 100px 0;
     margin: 0 auto;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.review-logo {
+    width: 700px;
 }
 
 .review__title {
@@ -501,16 +507,35 @@ p {
     font-weight: 400;
     font-family: 'Yeseva One', cursive;
     color: #fff;
-    margin-bottom: 20px;
+    width: 770px;
+}
+
+.review__inner .logo-decoration {
+    width: 770px;
+    height: min-content;
+}
+
+.text__quote {
+    font-size: 96px;
+    font-family: Georgia, serif;
+    font-weight: 300;
+    color: #9d9f9c;
+    z-index: 25;
+    margin-left: 0;
+    width: min-content;
+    margin-top: 0;
+    margin-right: 5px;
 }
 
 .review__text {
-    line-height: 40px;
+    margin-top: 40px;
+    line-height: 37px;
+    z-index: 23;
+    width: 630px;
+    height: 200px;
 }
 
 .review__basic-text {
-    margin-top: 20px;
-    margin-bottom: 36px;
     font-size: 25px;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
