@@ -193,7 +193,7 @@ p {
     justify-content: center;
     height: 750px;
     padding-top: 110px;
-    background: url("../images/intro.jpg") center no-repeat;
+    background: url("assets/images/intro.jpg") center no-repeat;
     background-size: cover;
 }
 
