@@ -193,7 +193,7 @@ p {
     justify-content: center;
     height: 750px;
     padding-top: 110px;
-    background: url("/assets/images/intro.jpg") center no-repeat;
+    background: url("../images/intro.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -254,7 +254,7 @@ p {
 .about {
     height: 710px;
     padding-top: 0;
-    background: url("/assets/images/bg-about.jpg") center no-repeat;
+    background: url("../images/bg-about.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -318,7 +318,7 @@ p {
 .ingredients {
     height: 758px;
     padding-top: 0;
-    background: url("/assets/images/bg-ingredients.jpg") center no-repeat;
+    background: url("../images/bg-ingredients.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -375,7 +375,7 @@ p {
 .menu {
     max-height: 994px;
     padding-top: 0;
-    background: url("/assets/images/bg-menu.jpg") center no-repeat;
+    background: url("../images/bg-menu.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -486,7 +486,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url("/assets/images/bg-reviews.jpg") center no-repeat;
+    background: url("../images/bg-reviews.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -560,7 +560,7 @@ p {
 .reservations {
     max-height: 710px;
     padding-top: 0;
-    background: url("/assets/images/bg-reservation.jpg") center no-repeat;
+    background: url("../images/bg-reservation.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -790,7 +790,7 @@ p {
 @media (max-width: 1280px) {
     .reservations {
         max-height: 1280px;
-        background: url("/assets/images/bg-reservation.jpg") center;
+        background: url("../images/bg-reservation.jpg") center;
     }
     .reservation__second-section {
         margin-top: 50px;
@@ -809,7 +809,7 @@ p {
         font-size: 82px;
     }
     .menu {
-        background: url("/assets/images/bg-menu.jpg") center;
+        background: url("../images/bg-menu.jpg") center;
     }
     .menu__inner {
         margin: 80px 20px 0 20px;
@@ -855,7 +855,7 @@ p {
     }
     .about {
         height: auto;
-        background: url("/assets/images/bg-about.jpg") center;
+        background: url("../images/bg-about.jpg") center;
     }
     .about__inner {
         justify-content: center;
