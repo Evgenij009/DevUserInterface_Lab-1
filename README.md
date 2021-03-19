@@ -1,2 +1,2 @@
 # DevUserInterface_Lab-1
-Link: https://DevUserInterface_Lab-1.github.io/
+Link: https://evgenij009.github.io/DevUserInterface_Lab-1/
