@@ -373,7 +373,7 @@ p {
 ==========================*/
 
 .menu {
-    height: 994px;
+    max-height: 994px;
     padding-top: 0;
     background: url("/assets/images/bg-menu.jpg") center no-repeat;
     background-size: cover;
@@ -396,7 +396,7 @@ p {
 .menu__item {
     text-align: center;
     height: min-content;
-    min-width: 400px;
+    width: auto;
     margin-bottom: 40px;
     padding: 0 50px;
 }
@@ -558,23 +558,23 @@ p {
 ===================== */
 
 .reservations {
-    height: 710px;
+    max-height: 710px;
     padding-top: 0;
     background: url("/assets/images/bg-reservation.jpg") center no-repeat;
     background-size: cover;
 }
 
 .reservations__inner {
-    display: flex;
-    flex-wrap: wrap;
     margin: 85px 0;
     padding: 0 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .reservations__item {
     text-align: center;
-    width: 50%;
-    /* margin: 0 15px; */
+    max-width: 570px;
 }
 
 .reservations__photo--meal {
@@ -742,3 +742,191 @@ p {
 .footer__social-icon:hover {
     transform: scale(1.7);
 }
+
+
+/* Burger */
+
+.burger {
+    display: none;
+    padding: 9px 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger__item:before {
+    top: -8px;
+}
+
+.burger__item:after {
+    bottom: -8px;
+}
+
+
+/* Media
+===================*/
+
+@media (max-width: 1280px) {
+    .reservations {
+        max-height: 1280px;
+        background: url("/assets/images/bg-reservation.jpg") center;
+    }
+    .reservation__second-section {
+        margin-top: 50px;
+    }
+    .reservations__photo--meal {
+        margin: 0 20px;
+    }
+    .reservations__item {
+        text-align: center;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1203px) {
+    .intro__title {
+        font-size: 82px;
+    }
+    .menu {
+        background: url("/assets/images/bg-menu.jpg") center;
+    }
+    .menu__inner {
+        margin: 80px 20px 0 20px;
+    }
+    .menu__item {
+        padding: 0 20px;
+    }
+    .menu-block {
+        width: 440px;
+    }
+    .footer__text {
+        font-size: 14px;
+    }
+    .reservation__input {
+        text-align: center;
+    }
+    .reservation__form--style_label {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:1080px) {
+    .nav__link {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .header__logo {
+        font-size: 30px;
+    }
+    .nav {
+        font-size: 19px;
+    }
+    .nav__link:before {
+        margin-bottom: 40px;
+    }
+    .header.fixed .nav__link::before {
+        margin-bottom: 27px;
+    }
+    .intro__title {
+        font-size: 60px;
+    }
+    .about {
+        height: auto;
+        background: url("/assets/images/bg-about.jpg") center;
+    }
+    .about__inner {
+        justify-content: center;
+    }
+    .about__description {
+        min-width: 500px;
+    }
+    .about__photo {
+        width: 600px;
+        height: auto;
+    }
+    .footer__text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 951px) {
+    /* Nav */
+    .nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #31344e;
+        text-align: right;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+    .menu {
+        min-height: 1800px;
+    }
+    .menu__block {
+        width: 500px;
+    }
+    .nav.show {
+        display: flex;
+        width: 180px;
+        background: #ddb852;
+    }
+    .header.fixed {
+        background-color: #dab140;
+        opacity: 0.8;
+        height: 70px;
+    }
+    .nav__link {
+        padding: 9px 15px;
+    }
+    .review__text {
+        margin-top: 40px;
+        line-height: 37px;
+        z-index: 23;
+        width: 550px;
+        height: 200px;
+    }
+    .review__basic-text {
+        font-size: 22px;
+    }
+    .review__inner {
+        width: 620px;
+        height: 450px;
+    }
+    .review__title {
+        font-size: 30px;
+    }
+    /* Burger */
+    .burger {
+        display: block;
+    }
+    .social__icon:hover {
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 770px) {}
