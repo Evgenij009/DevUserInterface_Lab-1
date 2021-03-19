@@ -6,7 +6,8 @@ $(function() {
     let intro = $("#intro");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
-    let nav = $("#nav")
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
 
     checkScroll(scrollPos, introH);
 
@@ -38,6 +39,13 @@ $(function() {
             scrollTop: elementOffset - 70
         }, 700);
     })
+
+    // Nav Toggle
+    navToggle.on("click", function(event) {
+        event.preventDefault();
+        nav.toggleClass("show");
+    });
+
 
     // Reviews: https://kenwheeler.github.io/slick/
     let slider = $("#reviewsSlider");
